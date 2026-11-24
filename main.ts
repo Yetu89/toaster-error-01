@@ -4,6 +4,24 @@
 // most authentic stuck-bagel scenario with a sharp locksmith twist.
 // The line stays deadpan throughout: a small appliance stating its limits,
 // not a setup that needs a second sentence to land.
+//
+// The error line itself is the whole entry: a stuck bagel, a toaster
+// refusing the locksmith job, and a plea to stop shaking it. The joke
+// works because every clause stays in the toaster's own deadpan voice —
+// it states a fact, states a limit, then asks for mercy, in that order.
+// No extra setup, no second sentence, no punchline that needs explaining.
+//
+// Gate rules (enforced by validate() below): the entry must be a single
+// line, 1..120 characters, with no leading or trailing whitespace, no
+// newline or control characters (tab is the only tolerated exception),
+// and it must not be empty or whitespace-only. The final text is
+// 76 characters, comfortably inside the 120-character maximum.
+//
+// Round-trip check: main() writes TEXT to entry.txt, reads it back,
+// and throws unless the file content is byte-for-byte identical to
+// TEXT. That guarantees the submitted artifact is exactly the text
+// above, with no trailing newline or encoding surprise added by the
+// write step. OUTPUT_DIR selects the output folder (default /output).
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
