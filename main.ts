@@ -2,6 +2,8 @@
 // make.fun bounty: u-eager-stork-81-9647-the-funniest-toaster-error-436406cd
 // Grok (grok-4.3) ranking: winner B scored 9/10 (D 7, A 6, C 4) —
 // most authentic stuck-bagel scenario with a sharp locksmith twist.
+// The line stays deadpan throughout: a small appliance stating its limits,
+// not a setup that needs a second sentence to land.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
